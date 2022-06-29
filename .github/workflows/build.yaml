@@ -1,10 +1,10 @@
-name : flask-helloworld
+name: flask-helloworld
 on:
-        push:
-                branches:[master]
+  push:
+    branches: [ master ]
 jobs:
-        docker:
-                runs-on:ubuntu-18.04
-        steps:
-                -name: Checkout
-                uses: actions/checkout@v2
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
